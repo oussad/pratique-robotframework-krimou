@@ -1,2 +1,2 @@
 def add ():
-    print(100*100)
+    print(400-200)

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.11.1 on win32)" generated="20230119 14:48:55.048" rpa="false" schemaversion="3">
+<suite id="s1" name="Listederoulante" source="E:\robotprojet1\test_cases\listederoulante.robot">
+<test id="s1-t1" name="test1" line="10">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230119 14:48:55.219" level="INFO">Opening browser 'chrome' to base url 'http://omayo.blogspot.com/'.</msg>
+<status status="PASS" starttime="20230119 14:48:55.218" endtime="20230119 14:48:57.434"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230119 14:48:57.434" endtime="20230119 14:48:57.567"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230119 14:48:59.569" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230119 14:48:57.568" endtime="20230119 14:48:59.569"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>id:multiselect1</arg>
+<arg>1</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20230119 14:48:59.570" level="INFO">Selecting options from selection list 'id:multiselect1' by index 1.</msg>
+<status status="PASS" starttime="20230119 14:48:59.569" endtime="20230119 14:48:59.680"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230119 14:49:02.683" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230119 14:48:59.681" endtime="20230119 14:49:02.683"/>
+</kw>
+<kw name="Unselect From List By Index" library="SeleniumLibrary">
+<arg>id:multiselect1</arg>
+<arg>1</arg>
+<doc>Unselects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20230119 14:49:02.684" level="INFO">Un-selecting options from selection list 'id:multiselect1' by index 1.</msg>
+<status status="PASS" starttime="20230119 14:49:02.684" endtime="20230119 14:49:02.758"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230119 14:49:05.760" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230119 14:49:02.759" endtime="20230119 14:49:05.760"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>id:multiselect1</arg>
+<arg>Volvo</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20230119 14:49:05.763" level="INFO">Selecting options from selection list 'id:multiselect1' by label Volvo.</msg>
+<status status="PASS" starttime="20230119 14:49:05.763" endtime="20230119 14:49:05.871"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>id:multiselect1</arg>
+<arg>Hyundai</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20230119 14:49:05.875" level="INFO">Selecting options from selection list 'id:multiselect1' by label Hyundai.</msg>
+<status status="PASS" starttime="20230119 14:49:05.875" endtime="20230119 14:49:05.976"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230119 14:49:08.996" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230119 14:49:05.996" endtime="20230119 14:49:08.996"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>id:multiselect1</arg>
+<arg>audix</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20230119 14:49:09.002" level="INFO">Selecting options from selection list 'id:multiselect1' by value audix.</msg>
+<status status="PASS" starttime="20230119 14:49:09.002" endtime="20230119 14:49:09.121"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230119 14:49:11.124" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230119 14:49:09.123" endtime="20230119 14:49:11.124"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>id:drop1</arg>
+<arg>jkl</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20230119 14:49:11.126" level="INFO">Selecting options from selection list 'id:drop1' by value jkl.</msg>
+<status status="PASS" starttime="20230119 14:49:11.126" endtime="20230119 14:49:11.213"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230119 14:49:13.215" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230119 14:49:11.215" endtime="20230119 14:49:13.215"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:drop1</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 14:49:13.217" level="INFO">Clicking element 'id:drop1'.</msg>
+<status status="PASS" starttime="20230119 14:49:13.216" endtime="20230119 14:49:13.299"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230119 14:49:15.301" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230119 14:49:13.301" endtime="20230119 14:49:15.301"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:ironman5</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 14:49:15.303" level="INFO">Clicking element 'id:ironman5'.</msg>
+<status status="PASS" starttime="20230119 14:49:15.302" endtime="20230119 14:49:15.352"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230119 14:49:17.354" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230119 14:49:15.354" endtime="20230119 14:49:17.354"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230119 14:49:17.355" endtime="20230119 14:49:19.771"/>
+</kw>
+<status status="PASS" starttime="20230119 14:48:55.217" endtime="20230119 14:49:19.771"/>
+</test>
+<doc>tester liste deroulante dropdown</doc>
+<status status="PASS" starttime="20230119 14:48:55.049" endtime="20230119 14:49:19.775"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Listederoulante">Listederoulante</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

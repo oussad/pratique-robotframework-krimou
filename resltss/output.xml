@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.11.1 on win32)" generated="20230119 16:05:15.899" rpa="false" schemaversion="3">
+<suite id="s1" name="Keywordsansargument" source="E:\robotprojet1\test_cases\keywordsansargument.robot">
+<test id="s1-t1" name="test1login" line="12">
+<kw name="lancer le navigateur">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230119 16:05:16.060" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<status status="PASS" starttime="20230119 16:05:16.060" endtime="20230119 16:05:20.381"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230119 16:05:20.381" endtime="20230119 16:05:20.504"/>
+</kw>
+<status status="PASS" starttime="20230119 16:05:16.060" endtime="20230119 16:05:20.504"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230119 16:05:23.505" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230119 16:05:20.505" endtime="20230119 16:05:23.505"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@name="username"]</arg>
+<arg>Admin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230119 16:05:23.507" level="INFO">Typing text 'Admin' into text field '//input[@name="username"]'.</msg>
+<status status="PASS" starttime="20230119 16:05:23.506" endtime="20230119 16:05:23.595"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>//input[@name="password"]</arg>
+<arg>admin123</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20230119 16:05:23.597" level="INFO">Typing password into text field '//input[@name="password"]'.</msg>
+<msg timestamp="20230119 16:05:23.636" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20230119 16:05:23.693" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20230119 16:05:23.596" endtime="20230119 16:05:23.693"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//button[@type="submit"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230119 16:05:23.694" level="INFO">Clicking button '//button[@type="submit"]'.</msg>
+<status status="PASS" starttime="20230119 16:05:23.693" endtime="20230119 16:05:24.748"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230119 16:05:27.751" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230119 16:05:24.750" endtime="20230119 16:05:27.751"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230119 16:05:27.752" endtime="20230119 16:05:30.198"/>
+</kw>
+<status status="PASS" starttime="20230119 16:05:16.059" endtime="20230119 16:05:30.200"/>
+</test>
+<doc>keyword sans arguement</doc>
+<status status="PASS" starttime="20230119 16:05:15.900" endtime="20230119 16:05:30.205"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Keywordsansargument">Keywordsansargument</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

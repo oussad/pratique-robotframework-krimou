@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.11.1 on win32)" generated="20230119 14:15:49.264" rpa="false" schemaversion="3">
+<suite id="s1" name="Exercicerobot" source="E:\robotprojet1\test_cases\exercicerobot.robot">
+<test id="s1-t1" name="test1" line="9">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230119 14:15:49.499" level="INFO">Opening browser 'chrome' to base url 'https://imdb.com'.</msg>
+<status status="PASS" starttime="20230119 14:15:49.498" endtime="20230119 14:15:57.122"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230119 14:15:57.123" endtime="20230119 14:15:57.260"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230119 14:15:59.265" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230119 14:15:57.264" endtime="20230119 14:15:59.265"/>
+</kw>
+<kw name="Open Context Menu" library="SeleniumLibrary">
+<arg>//div[text()=""]</arg>
+<doc>Opens the context menu on the element identified by ``locator``.</doc>
+<status status="PASS" starttime="20230119 14:15:59.265" endtime="20230119 14:15:59.610"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230119 14:16:01.611" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230119 14:15:59.611" endtime="20230119 14:16:01.611"/>
+</kw>
+<status status="PASS" starttime="20230119 14:15:49.498" endtime="20230119 14:16:01.612"/>
+</test>
+<doc>exercice pratique</doc>
+<status status="PASS" starttime="20230119 14:15:49.265" endtime="20230119 14:16:01.613"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Exercicerobot">Exercicerobot</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

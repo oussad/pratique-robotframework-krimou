@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.11.1 on win32)" generated="20230122 01:10:59.168" rpa="false" schemaversion="3">
+<suite id="s1" name="Exercicetp1" source="E:\robotprojet1\test_cases\exercicetp1.robot">
+<kw name="accés au site" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230122 01:10:59.360" level="INFO">Opening browser 'chrome' to base url 'https://www.imdb.com/?ref_=nv_home'.</msg>
+<status status="PASS" starttime="20230122 01:10:59.359" endtime="20230122 01:11:03.967"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230122 01:11:03.967" endtime="20230122 01:11:04.131"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230122 01:11:07.132" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230122 01:11:04.131" endtime="20230122 01:11:07.132"/>
+</kw>
+<status status="PASS" starttime="20230122 01:10:59.358" endtime="20230122 01:11:07.132"/>
+</kw>
+<test id="s1-t1" name="test acces au recherche avence" line="15">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://div[text()="Tout"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230122 01:11:07.135" level="INFO">Clicking element 'xpath://div[text()="Tout"]'.</msg>
+<status status="PASS" starttime="20230122 01:11:07.133" endtime="20230122 01:11:07.227"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230122 01:11:09.228" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230122 01:11:07.228" endtime="20230122 01:11:09.228"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://span[text()="Recherche avancée"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230122 01:11:09.229" level="INFO">Clicking element 'xpath://span[text()="Recherche avancée"]'.</msg>
+<status status="PASS" starttime="20230122 01:11:09.229" endtime="20230122 01:11:10.586"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230122 01:11:13.589" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230122 01:11:10.588" endtime="20230122 01:11:13.589"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath://a[text()="Advanced Title Search"]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230122 01:11:13.591" level="INFO">Clicking link 'xpath://a[text()="Advanced Title Search"]'.</msg>
+<status status="PASS" starttime="20230122 01:11:13.591" endtime="20230122 01:11:14.815"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230122 01:11:16.816" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230122 01:11:14.816" endtime="20230122 01:11:16.816"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>xpath://h3[text()="Title Groups"]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20230122 01:11:16.817" endtime="20230122 01:11:17.122"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230122 01:11:19.124" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230122 01:11:17.123" endtime="20230122 01:11:19.124"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>id:title_type-1</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20230122 01:11:19.125" level="INFO">Selecting checkbox 'id:title_type-1'.</msg>
+<status status="PASS" starttime="20230122 01:11:19.124" endtime="20230122 01:11:19.248"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230122 01:11:21.250" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230122 01:11:19.249" endtime="20230122 01:11:21.250"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>id:title_type-2</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20230122 01:11:21.251" level="INFO">Selecting checkbox 'id:title_type-2'.</msg>
+<status status="PASS" starttime="20230122 01:11:21.251" endtime="20230122 01:11:21.342"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230122 01:11:23.342" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230122 01:11:21.342" endtime="20230122 01:11:23.342"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@name="release_date-min"]</arg>
+<arg>2000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230122 01:11:23.344" level="INFO">Typing text '2000' into text field 'xpath://input[@name="release_date-min"]'.</msg>
+<status status="PASS" starttime="20230122 01:11:23.343" endtime="20230122 01:11:23.486"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230122 01:11:25.488" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230122 01:11:23.486" endtime="20230122 01:11:25.488"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@name="release_date-max"]</arg>
+<arg>2023</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230122 01:11:25.490" level="INFO">Typing text '2023' into text field 'xpath://input[@name="release_date-max"]'.</msg>
+<status status="PASS" starttime="20230122 01:11:25.489" endtime="20230122 01:11:25.623"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230122 01:11:27.625" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230122 01:11:25.624" endtime="20230122 01:11:27.625"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>xpath://select[@name="user_rating-min"]</arg>
+<arg>1.0</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20230122 01:11:27.626" level="INFO">Selecting options from selection list 'xpath://select[@name="user_rating-min"]' by label 1.0.</msg>
+<status status="PASS" starttime="20230122 01:11:27.625" endtime="20230122 01:11:27.733"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230122 01:11:29.736" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230122 01:11:27.734" endtime="20230122 01:11:29.736"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>xpath://select[@name="user_rating-max"]</arg>
+<arg>10</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20230122 01:11:29.737" level="INFO">Selecting options from selection list 'xpath://select[@name="user_rating-max"]' by label 10.</msg>
+<status status="PASS" starttime="20230122 01:11:29.736" endtime="20230122 01:11:29.843"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230122 01:11:31.846" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230122 01:11:29.844" endtime="20230122 01:11:31.846"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>id:genres-1</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20230122 01:11:31.848" level="INFO">Selecting checkbox 'id:genres-1'.</msg>
+<status status="PASS" starttime="20230122 01:11:31.847" endtime="20230122 01:11:31.954"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230122 01:11:33.956" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230122 01:11:31.955" endtime="20230122 01:11:33.956"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>id:groups-4</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20230122 01:11:33.958" level="INFO">Selecting checkbox 'id:groups-4'.</msg>
+<status status="PASS" starttime="20230122 01:11:33.958" endtime="20230122 01:11:34.084"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230122 01:11:36.085" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230122 01:11:34.085" endtime="20230122 01:11:36.085"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>xpath://h3[text()="Countries"]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20230122 01:11:36.086" endtime="20230122 01:11:36.385"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230122 01:11:38.387" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230122 01:11:36.387" endtime="20230122 01:11:38.387"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>id:colors-1</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20230122 01:11:38.389" level="INFO">Selecting checkbox 'id:colors-1'.</msg>
+<status status="PASS" starttime="20230122 01:11:38.388" endtime="20230122 01:11:38.494"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230122 01:11:40.495" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230122 01:11:38.495" endtime="20230122 01:11:40.495"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>xpath://h3[text()="Runtime"]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20230122 01:11:40.496" endtime="20230122 01:11:40.798"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230122 01:11:42.801" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230122 01:11:40.800" endtime="20230122 01:11:42.801"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>css:.countries</arg>
+<arg>us</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20230122 01:11:42.802" level="INFO">Selecting options from selection list 'css:.countries' by value us.</msg>
+<status status="PASS" starttime="20230122 01:11:42.802" endtime="20230122 01:11:42.918"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>css:.countries</arg>
+<arg>gb</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20230122 01:11:42.920" level="INFO">Selecting options from selection list 'css:.countries' by value gb.</msg>
+<status status="PASS" starttime="20230122 01:11:42.919" endtime="20230122 01:11:43.055"/>
+</kw>
+<kw name="Capture Element Screenshot" library="SeleniumLibrary">
+<arg>css:.countries</arg>
+<arg>../result/captelemey.png</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<msg timestamp="20230122 01:11:43.282" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="captelemey.png"&gt;&lt;img src="captelemey.png" width="400px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230122 01:11:43.056" endtime="20230122 01:11:43.282"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230122 01:11:45.285" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230122 01:11:43.283" endtime="20230122 01:11:45.285"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>css:.languages</arg>
+<arg>en</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20230122 01:11:45.287" level="INFO">Selecting options from selection list 'css:.languages' by value en.</msg>
+<status status="PASS" starttime="20230122 01:11:45.286" endtime="20230122 01:11:45.394"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230122 01:11:47.395" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230122 01:11:45.394" endtime="20230122 01:11:47.395"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>css:.languages</arg>
+<arg>fr</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20230122 01:11:47.396" level="INFO">Selecting options from selection list 'css:.languages' by value fr.</msg>
+<status status="PASS" starttime="20230122 01:11:47.395" endtime="20230122 01:11:47.495"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230122 01:11:49.497" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230122 01:11:47.496" endtime="20230122 01:11:49.497"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0,3000)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230122 01:11:49.498" level="INFO">Executing JavaScript:
+window.scrollTo(0,3000)
+Without any arguments.</msg>
+<status status="PASS" starttime="20230122 01:11:49.498" endtime="20230122 01:11:49.519"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230122 01:11:51.521" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230122 01:11:49.519" endtime="20230122 01:11:51.521"/>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>my_ratings</arg>
+<arg>restrict</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20230122 01:11:51.523" level="INFO">Selecting 'restrict' from radio button 'my_ratings'.</msg>
+<status status="PASS" starttime="20230122 01:11:51.522" endtime="20230122 01:11:51.610"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230122 01:11:53.612" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230122 01:11:51.611" endtime="20230122 01:11:53.612"/>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>my_ratings</arg>
+<arg>my_ratings|</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20230122 01:11:53.613" level="INFO">Selecting 'my_ratings|' from radio button 'my_ratings'.</msg>
+<status status="PASS" starttime="20230122 01:11:53.613" endtime="20230122 01:11:53.706"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230122 01:11:55.709" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230122 01:11:53.708" endtime="20230122 01:11:55.709"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>id:search-count</arg>
+<arg>250</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20230122 01:11:55.711" level="INFO">Selecting options from selection list 'id:search-count' by value 250.</msg>
+<status status="PASS" starttime="20230122 01:11:55.710" endtime="20230122 01:11:55.817"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230122 01:11:57.818" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230122 01:11:55.818" endtime="20230122 01:11:57.818"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>css:.primary</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230122 01:11:57.819" level="INFO">Clicking button 'css:.primary'.</msg>
+<status status="PASS" starttime="20230122 01:11:57.819" endtime="20230122 01:11:59.306"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>../result/cappage.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230122 01:11:59.495" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="cappage.png"&gt;&lt;img src="cappage.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230122 01:11:59.306" endtime="20230122 01:11:59.495"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230122 01:12:01.497" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230122 01:11:59.496" endtime="20230122 01:12:01.497"/>
+</kw>
+<status status="PASS" starttime="20230122 01:11:07.132" endtime="20230122 01:12:01.498"/>
+</test>
+<kw name="fermeture de la page de site" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230122 01:12:01.501" endtime="20230122 01:12:03.917"/>
+</kw>
+<status status="PASS" starttime="20230122 01:12:01.501" endtime="20230122 01:12:03.918"/>
+</kw>
+<doc>exercice Tp pour pratiqué</doc>
+<status status="PASS" starttime="20230122 01:10:59.170" endtime="20230122 01:12:03.918"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Exercicetp1">Exercicetp1</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230122 01:10:59.352" level="ERROR">Error in file 'E:\robotprojet1\test_cases\checkboxes.robot' on line 4: Setting 'Test Setup' is not allowed in resource file.</msg>
+<msg timestamp="20230122 01:10:59.354" level="ERROR">Error in file 'E:\robotprojet1\test_cases\checkboxes.robot' on line 5: Setting 'Test Teardown' is not allowed in resource file.</msg>
+<msg timestamp="20230122 01:10:59.355" level="ERROR">Error in file 'E:\robotprojet1\test_cases\exercicetp1.robot' on line 8: Error in file 'E:\robotprojet1\test_cases\checkboxes.robot' on line 9: Resource file with 'Test Cases' section is invalid.</msg>
+</errors>
+</robot>

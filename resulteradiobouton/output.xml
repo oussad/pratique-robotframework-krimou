@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.11.1 on win32)" generated="20230119 13:53:13.776" rpa="false" schemaversion="3">
+<suite id="s1" name="Scrolerobot" source="E:\robotprojet1\test_cases\scrolerobot.robot">
+<test id="s1-t1" name="test1" line="10">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${Brower}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230119 13:53:13.935" level="INFO">Opening browser 'chrome' to base url 'https://www.countries-ofthe-world.com/flags-of-the-world.html'.</msg>
+<status status="PASS" starttime="20230119 13:53:13.935" endtime="20230119 13:53:15.811"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230119 13:53:15.812" endtime="20230119 13:53:15.940"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230119 13:53:17.942" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230119 13:53:15.941" endtime="20230119 13:53:17.942"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>xpath://td[text()="Jamaica"]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20230119 13:53:17.943" endtime="20230119 13:53:18.273"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230119 13:53:20.277" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230119 13:53:18.275" endtime="20230119 13:53:20.277"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230119 13:53:20.277" endtime="20230119 13:53:22.579"/>
+</kw>
+<status status="PASS" starttime="20230119 13:53:13.934" endtime="20230119 13:53:22.582"/>
+</test>
+<doc>tester la fonction scrole</doc>
+<status status="PASS" starttime="20230119 13:53:13.777" endtime="20230119 13:53:22.613"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Scrolerobot">Scrolerobot</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

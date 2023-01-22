@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.11.1 on win32)" generated="20230119 17:38:42.278" rpa="false" schemaversion="3">
+<suite id="s1" name="Keywordavecargumentavecretour" source="E:\robotprojet1\test_cases\keywordavecargumentavecretour.robot">
+<test id="s1-t1" name="test1login" line="16">
+<kw name="lancer le navigateur">
+<var>${title}</var>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${navigateur}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230119 17:38:42.449" level="INFO">Opening browser 'firefox' to base url 'chrome'.</msg>
+<msg timestamp="20230119 17:38:42.451" level="INFO">Firefox driver log is always forced to to: E:\robotprojet1\test_cases\restl\geckodriver-19.log</msg>
+<msg timestamp="20230119 17:38:48.083" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-26.png"&gt;&lt;img src="selenium-screenshot-26.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230119 17:38:48.083" level="FAIL">InvalidArgumentException: Message: Malformed URL: URL constructor: chrome is not a valid URL.
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:180:5
+InvalidArgumentError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:309:5
+GeckoDriver.prototype.navigateTo@chrome://remote/content/marionette/driver.sys.mjs:823:11
+</msg>
+<status status="FAIL" starttime="20230119 17:38:42.449" endtime="20230119 17:38:48.090"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20230119 17:38:48.090" endtime="20230119 17:38:48.090"/>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="NOT RUN" starttime="20230119 17:38:48.090" endtime="20230119 17:38:48.090"/>
+</kw>
+<status status="FAIL" starttime="20230119 17:38:42.449" endtime="20230119 17:38:48.090"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${title}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230119 17:38:48.091" endtime="20230119 17:38:48.091"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230119 17:38:48.091" endtime="20230119 17:38:48.092"/>
+</kw>
+<kw name="remplir le formulaire de login">
+<arg>${user}</arg>
+<arg>${password}</arg>
+<status status="NOT RUN" starttime="20230119 17:38:48.092" endtime="20230119 17:38:48.092"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20230119 17:38:48.093" endtime="20230119 17:38:48.093"/>
+</kw>
+<tag>test1</tag>
+<status status="FAIL" starttime="20230119 17:38:42.448" endtime="20230119 17:38:48.094">InvalidArgumentException: Message: Malformed URL: URL constructor: chrome is not a valid URL.
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:180:5
+InvalidArgumentError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:309:5
+GeckoDriver.prototype.navigateTo@chrome://remote/content/marionette/driver.sys.mjs:823:11
+</status>
+</test>
+<test id="s1-t2" name="testdashborad" line="23">
+<kw name="lancer le navigateur">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${navigateur}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230119 17:38:48.101" level="INFO">Opening browser 'firefox' to base url 'chrome'.</msg>
+<msg timestamp="20230119 17:38:48.104" level="INFO">Firefox driver log is always forced to to: E:\robotprojet1\test_cases\restl\geckodriver-20.log</msg>
+<msg timestamp="20230119 17:38:53.867" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-27.png"&gt;&lt;img src="selenium-screenshot-27.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230119 17:38:53.867" level="FAIL">InvalidArgumentException: Message: Malformed URL: URL constructor: chrome is not a valid URL.
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:180:5
+InvalidArgumentError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:309:5
+GeckoDriver.prototype.navigateTo@chrome://remote/content/marionette/driver.sys.mjs:823:11
+</msg>
+<status status="FAIL" starttime="20230119 17:38:48.100" endtime="20230119 17:38:53.869"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20230119 17:38:53.869" endtime="20230119 17:38:53.869"/>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="NOT RUN" starttime="20230119 17:38:53.869" endtime="20230119 17:38:53.869"/>
+</kw>
+<status status="FAIL" starttime="20230119 17:38:48.100" endtime="20230119 17:38:53.869"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230119 17:38:53.869" endtime="20230119 17:38:53.869"/>
+</kw>
+<kw name="remplir le formulaire de login">
+<arg>${user}</arg>
+<arg>${password}</arg>
+<status status="NOT RUN" starttime="20230119 17:38:53.870" endtime="20230119 17:38:53.870"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>dashetborad</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" starttime="20230119 17:38:53.870" endtime="20230119 17:38:53.870"/>
+</kw>
+<status status="FAIL" starttime="20230119 17:38:48.100" endtime="20230119 17:38:53.870">InvalidArgumentException: Message: Malformed URL: URL constructor: chrome is not a valid URL.
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:180:5
+InvalidArgumentError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:309:5
+GeckoDriver.prototype.navigateTo@chrome://remote/content/marionette/driver.sys.mjs:823:11
+</status>
+</test>
+<test id="s1-t3" name="testsearchgoogle" line="28">
+<kw name="lancer le navigateur">
+<arg>${URL1}</arg>
+<arg>${Browser1}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${navigateur}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230119 17:38:53.875" level="INFO">Opening browser 'firefox' to base url 'chrome'.</msg>
+<msg timestamp="20230119 17:38:53.879" level="INFO">Firefox driver log is always forced to to: E:\robotprojet1\test_cases\restl\geckodriver-21.log</msg>
+<msg timestamp="20230119 17:38:59.860" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-28.png"&gt;&lt;img src="selenium-screenshot-28.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230119 17:38:59.860" level="FAIL">InvalidArgumentException: Message: Malformed URL: URL constructor: chrome is not a valid URL.
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:180:5
+InvalidArgumentError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:309:5
+GeckoDriver.prototype.navigateTo@chrome://remote/content/marionette/driver.sys.mjs:823:11
+</msg>
+<status status="FAIL" starttime="20230119 17:38:53.875" endtime="20230119 17:38:59.861"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20230119 17:38:59.861" endtime="20230119 17:38:59.861"/>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="NOT RUN" starttime="20230119 17:38:59.861" endtime="20230119 17:38:59.861"/>
+</kw>
+<status status="FAIL" starttime="20230119 17:38:53.874" endtime="20230119 17:38:59.862"/>
+</kw>
+<status status="FAIL" starttime="20230119 17:38:53.873" endtime="20230119 17:38:59.862">InvalidArgumentException: Message: Malformed URL: URL constructor: chrome is not a valid URL.
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:180:5
+InvalidArgumentError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:309:5
+GeckoDriver.prototype.navigateTo@chrome://remote/content/marionette/driver.sys.mjs:823:11
+</status>
+</test>
+<doc>keyword avec arguement avec retour</doc>
+<status status="FAIL" starttime="20230119 17:38:42.280" endtime="20230119 17:38:59.866"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">test1</stat>
+</tag>
+<suite>
+<stat pass="0" fail="3" skip="0" id="s1" name="Keywordavecargumentavecretour">Keywordavecargumentavecretour</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
